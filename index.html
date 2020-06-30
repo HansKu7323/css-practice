@@ -11,6 +11,8 @@
       height: 20px;
       border-radius: 100px;
       background-color: #ccc;
+      transition: all .5s;
+      box-shadow: 0px 3px 0px rgba(0,0,0,.13)inset;
     }
 
     .btn-box .btn{
@@ -19,12 +21,19 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: #aaa;
+      background-color: #fff;
+      margin-left: 0;
+      transition:.5s;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.3);
     }
 
     input[ type = "checkbox"]{
       position: absolute;
       opacity: 0;
+    }
+
+    input[ type = "checkbox"]:checked + .btn-box{
+      background-color: #8f8;
     }
 
     input[ type = "checkbox"]:checked + .btn-box .btn{
